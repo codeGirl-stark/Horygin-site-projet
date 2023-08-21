@@ -1,118 +1,96 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="font-Montserrat">
+         
+      <p className='bg-blue-700 border-solid border-1 p-6 text-white text-base font-black text-center'> En plus de coder, un développeur peut intervenir dans la phase de conception, participer à 
+        l'élaboration des algorithmes, prendre du recul sur les attenttes de l'utilisateur final, 
+        rédiger la documentation.</p>
+
+      <div className="relative">
+        <div className="z-0">
+          <Image src="/lameuf.png" alt="Une programmeuse" width="4047" height="1557" />
+        </div>
+
+        <div 
+        className="absolute bottom-0 lg:bottom-5 left-20 w-3/4 md:w-1/2 lg:w-1/3 h-full lg:h-4/5 border-1
+          bg-blue-800 pb-10 z-10 transform translate-y-1/2 md:translate-y-1/4 lg:translate-y-1/4">
+          <h1 
+          className="
+          font-bold text-white text-6xl lg:text-7xl lg:flex lg:flex-col ml-10 mt-5 mb-0 sm:m-20 sm:mt-10 sm:mb-5
+          lg:mx-10 lg:mt-10 lg:mb-5 h-30">
+            RAPIDE & <span>FIABLE</span>
+          </h1>
+
+          <button 
+          className="btn btn-outline normal-case text-xl font-bold text-white border-white 
+              border-1  sm:border-2 px-10 rounded-full hover:bg-blue-600 hover:border-white ml-20">
+            Plus d'info
+          </button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className='hero bg-blue-100'>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className='hero-content flex-col lg:flex-row '>
+          <div className='w-full lg:w-3/4 pl-5 lg:pl-0'>
+            <h2 className="font-bold text-blue-800 text-4xl md:text-5xl pt-40 lg:pt-20 ">
+              Des solutions complètes pour une présence en ligne réussie
+            </h2>
+            <p className='text-2xl md:text-3xl text-gray-500 mt-10'>
+              Bénéficiez d'une assistance gratuite 24h/24 et 7j/7
+            </p>
+            <div className="mt-10 flex flex-row">
+              <Image src="/checklist.png" alt="checklist" width="40" height="10"></Image>
+              <p className="text-2xl md:text-3xl text-blue-700 font-bold">Hautement évolutif</p>
+            </div>
+            <div className="mt-10 flex flex-row">
+              <Image src="/checklist.png" alt="checklist" width="40" height="10"></Image>
+              <p className="text-2xl md:text-3xl text-blue-700 font-bold">Performance maximum</p>
+            </div>
+            <div className="mt-10 flex flex-row">
+              <Image src="/checklist.png" alt="checklist" width="40" height="10"></Image>
+              <p className="text-2xl md:text-3xl text-blue-700 font-bold">Souveraineté totale des données</p>
+            </div>
+          </div>
+          
+          <Image src="/flex.png" alt="data image" width="300" height="500" className='hidden lg:block  w-full lg:w-1/2 lg:mt-20'></Image>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section
+      className="hero min-h-screen bg-top relative" style={{backgroundImage: 'url(/fond1.png)'}}>
+        <div className="hero-overlay bg-gradient-to-r from-blue-600 to-blue-700 opacity-60 absolute inset-0"></div>
+        <div 
+          className="border-4 border-blue-500 text-center w-11/12 h-auto mt-[11rem] p-[3rem] 
+          rounded-3xl relative Z-10 bg-clip-content-box text-neutral">
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
+          <h3 className="text-6xl font-bold text-white">
+            Inclus avec chaque hébergement web
+          </h3>
+          <p className="text-2xl text-center my-[2rem] mr-[3rem] text-white px-[8rem]">
+            Horygin est le partenaire idéal pour les particuliers, passionnés et entreprises. La performance
+            de nos serveurs vous permet de disposer  d'une vitesse maximale pour vos projets web ! 
+            L'hébergement web Horygin présente de nombreux avantages (<Link href="#"
+            className='text-red-700 underline underline-offset-1'>
+              détails
+            </Link>).
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <div className='flex w-full md:justify-around flex-col md:flex-row mt-[5rem]'>
+              <textarea placeholder="Premier texte" cols={30} rows={30}></textarea>
+              <textarea placeholder="Deuxième texte" cols={30} rows={30}></textarea>
+              <textarea placeholder="Troisième texte" cols={30} rows={30}></textarea>
+          </div>
+        </div>
+      </section>
+
     </main>
   )
 }
