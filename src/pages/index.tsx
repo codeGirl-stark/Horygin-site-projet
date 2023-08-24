@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
+import { Hebergement } from '@/components/Hebergement'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,8 +20,8 @@ export default function Home() {
         </div>
 
         <div 
-        className="absolute bottom-0 lg:bottom-5 left-20 w-3/4 md:w-1/2 lg:w-1/3 h-full lg:h-4/5 border-1
-          bg-blue-800 pb-10 z-10 transform translate-y-1/2 md:translate-y-1/4 lg:translate-y-1/4">
+        className="absolute bottom-0 lg:bottom-5 left-20 w-3/4 md:w-1/2 lg:w-[35%] h-full lg:h-4/5 border-1
+          bg-blue-800 z-10 transform translate-y-1/2 md:translate-y-1/4 lg:translate-y-1/4">
           <h1 
           className="
           font-bold text-white text-6xl lg:text-7xl lg:flex lg:flex-col ml-10 mt-5 mb-0 sm:m-20 sm:mt-10 sm:mb-5
@@ -30,7 +31,7 @@ export default function Home() {
 
           <button 
           className="btn btn-outline normal-case text-xl font-bold text-white border-white 
-              border-1  sm:border-2 px-10 rounded-full hover:bg-blue-600 hover:border-white ml-20">
+              border-2  sm:border-2 px-10 rounded-full hover:bg-blue-600 hover:border-white ml-20">
             Plus d'info
           </button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         </div>
@@ -38,9 +39,10 @@ export default function Home() {
 
       <section className='hero bg-blue-100'>
 
-        <div className='hero-content flex-col lg:flex-row '>
-          <div className='w-full lg:w-3/4 pl-5 lg:pl-0'>
-            <h2 className="font-bold text-blue-800 text-4xl md:text-5xl pt-40 lg:pt-20 ">
+        <div className='hero-content flex-col-reverse lg:flex-row '>
+
+          <div className='w-full p-0 m-0 lg:w-3/4 pl-5 lg:pl-0'>
+            <h2 className="font-bold text-center lg:text-left text-blue-800 text-4xl md:text-5xl lg:pt-20 ">
               Des solutions complètes pour une présence en ligne réussie
             </h2>
             <p className='text-2xl md:text-3xl text-gray-500 mt-10'>
@@ -60,21 +62,22 @@ export default function Home() {
             </div>
           </div>
           
-          <Image src="/flex.png" alt="data image" width="300" height="500" className='hidden lg:block  w-full lg:w-1/2 lg:mt-20'></Image>
+          <Image src="/flex.png" alt="data image" width="300" height="500" className='w-1/2 pt-40 lg:w-1/2 lg:mt-20'></Image>
         </div>
       </section>
 
-      <section
-      className="hero min-h-screen bg-top relative" style={{backgroundImage: 'url(/fond1.png)'}}>
-        <div className="hero-overlay bg-gradient-to-r from-blue-600 to-blue-700 opacity-60 absolute inset-0"></div>
+      <section className="hero min-h-screen bg-center md:bg-top" 
+      style={{backgroundImage: 'url(/fond1.png)'}}>
+        <div className="hero-overlay bg-gradient-to-r from-blue-500 to-blue-700 opacity-60"></div>
+        
         <div 
-          className="border-4 border-blue-500 text-center w-11/12 h-auto mt-[11rem] p-[3rem] 
-          rounded-3xl relative Z-10 bg-clip-content-box text-neutral">
+          className="border-[6px] border-blue-600 text-center w-full md:w-[89%] h-auto md:mt-[12rem] p-[3rem] pb-[5rem]
+          bg-blue-200 opacity-70 rounded-[2rem] relative">
 
-          <h3 className="text-6xl font-bold text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white relative z-10">
             Inclus avec chaque hébergement web
-          </h3>
-          <p className="text-2xl text-center my-[2rem] mr-[3rem] text-white px-[8rem]">
+          </h1>
+          <p className="text-xl md:text-2xl w-full md:text-center my-[2rem] md:mr-[3rem] text-white lg:px-[8rem]">
             Horygin est le partenaire idéal pour les particuliers, passionnés et entreprises. La performance
             de nos serveurs vous permet de disposer  d'une vitesse maximale pour vos projets web ! 
             L'hébergement web Horygin présente de nombreux avantages (<Link href="#"
@@ -83,10 +86,15 @@ export default function Home() {
             </Link>).
           </p>
 
-          <div className='flex w-full md:justify-around flex-col md:flex-row mt-[5rem]'>
-              <textarea placeholder="Premier texte" cols={30} rows={30}></textarea>
-              <textarea placeholder="Deuxième texte" cols={30} rows={30}></textarea>
-              <textarea placeholder="Troisième texte" cols={30} rows={30}></textarea>
+          <div className='flex w-full md:justify-around flex-col md:flex-row md:mt-[4rem] md:ml-3'>
+            <Hebergement image="/world.png" title="Nom de domaine offert" description="Votre nom de domaine est votre identitésur la Toile. Votre nom de domaine est OFFERT. Vous 
+            avez le choix parmi les extensions les plus populaires: .fr .com .net .org .eu... Horygin est un registrar de domaines accrédité: Icann,Afnic,DNS.BNE,DNS.LU, Nominet, Eurid, Verisign..." />
+
+            <Hebergement image="/write.png" title="Certificat SSL gratuit" description="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
+            Ce certificat rassure vos visiteurs, protège les informations sensibles des utilisateurs sur votre site web et améliore votre référencement SEO." />
+
+            <Hebergement image="/mail.png" title="Adresses mail professionnelles" description="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
+            Ce certificat rassure vos visiteurs, protège les informations sensibles des utilisateurs sur votre site web et améliore votre référencement SEO." />
           </div>
         </div>
       </section>
