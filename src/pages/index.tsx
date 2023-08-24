@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
           
-          <Image src="/flex.png" alt="data image" width="300" height="500" className='w-1/2 pt-40 lg:w-1/2 lg:mt-20'></Image>
+          <Image src="/flex.png" alt="data image" width="300" height="500" className='w-1/2 pt-[6rem] lg:pt-[1rem] lg:w-1/2 lg:mt-20'></Image>
         </div>
       </section>
 
@@ -72,7 +72,7 @@ export default function Home() {
         
         <div 
           className="border-[6px] border-blue-600 text-center w-full md:w-[89%] h-auto md:mt-[12rem] p-[3rem] pb-[5rem]
-          bg-blue-200 opacity-70 rounded-[2rem] relative">
+          bg-blue-200 opacity-70 rounded-[2rem] relative md:mb-[4rem]">
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white relative z-10">
             Inclus avec chaque hébergement web
@@ -95,6 +95,20 @@ export default function Home() {
 
             <Hebergement image="/mail.png" title="Adresses mail professionnelles" description="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
             Ce certificat rassure vos visiteurs, protège les informations sensibles des utilisateurs sur votre site web et améliore votre référencement SEO." />
+          </div>
+        </div>
+      </section>
+ 
+      <section className="hero min-h-screen bg-top bg-blue-600 border-t-[5px] border-t-blue-400" 
+      style={{backgroundImage: 'url(/concept.png)'}}>
+
+        <div className="flex-row">
+          <div>
+              <Image src="/icon1.png" alt="icone1" width={150} height={100}/>
+          </div>
+
+          <div>
+              <Image src="/icon2.png" alt="icone1" width={150} height={100}/>
           </div>
         </div>
       </section>
