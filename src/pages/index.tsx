@@ -19,8 +19,7 @@ export default function Home() {
           <Image src="/lameuf.png" alt="Une programmeuse" width="4047" height="1557" />
         </div>
 
-        <div 
-        className="absolute bottom-0 lg:bottom-5 left-20 w-3/4 md:w-1/2 lg:w-[35%] h-full lg:h-4/5 border-1
+        <div className="absolute bottom-0 lg:bottom-5 left-20 w-3/4 md:w-1/2 lg:w-[35%] h-full lg:h-4/5 border-1
           bg-blue-800 z-10 transform translate-y-1/2 md:translate-y-1/4 lg:translate-y-1/4">
           <h1 
           className="
@@ -86,30 +85,45 @@ export default function Home() {
             </Link>).
           </p>
 
-          <div className='flex w-full md:justify-around flex-col md:flex-row md:mt-[4rem] md:ml-3'>
-            <Hebergement image="/world.png" title="Nom de domaine offert" description="Votre nom de domaine est votre identitésur la Toile. Votre nom de domaine est OFFERT. Vous 
-            avez le choix parmi les extensions les plus populaires: .fr .com .net .org .eu... Horygin est un registrar de domaines accrédité: Icann,Afnic,DNS.BNE,DNS.LU, Nominet, Eurid, Verisign..." />
+          <div className='flex w-full lg:justify-around flex-col lg:flex-row lg:mt-[4rem] lg:ml-3'>
+            <Hebergement image="/world.png" title="Nom de domaine offert" description1="Votre nom de domaine est votre identitésur la Toile. Votre nom de domaine est OFFERT. Vous 
+            avez le choix parmi les extensions les plus populaires: .fr .com .net .org .eu..." description2="Horygin est un registrar de domaines accrédité: Icann,Afnic,DNS.BNE,DNS.LU, Nominet, Eurid, Verisign..." />
 
-            <Hebergement image="/write.png" title="Certificat SSL gratuit" description="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
+            <Hebergement image="/write.png" title="Certificat SSL gratuit" description1="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
             Ce certificat rassure vos visiteurs, protège les informations sensibles des utilisateurs sur votre site web et améliore votre référencement SEO." />
 
-            <Hebergement image="/mail.png" title="Adresses mail professionnelles" description="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
+            <Hebergement image="/mail.png" title="Adresses mail professionnelles" description1="Protégez votre site web et gagnez la confiance de vos clients grâce au certificat SSL gratuit Let's Encrypt (htpps).
             Ce certificat rassure vos visiteurs, protège les informations sensibles des utilisateurs sur votre site web et améliore votre référencement SEO." />
           </div>
         </div>
       </section>
  
-      <section className="hero min-h-screen bg-top bg-blue-600 border-t-[5px] border-t-blue-400" 
+      <section className="hero min-h-screen bg-blue-700 border-t-[5px] border-t-blue-500" 
       style={{backgroundImage: 'url(/concept.png)'}}>
 
-        <div className="flex-row">
-          <div>
-              <Image src="/icon1.png" alt="icone1" width={150} height={100}/>
-          </div>
+        <div className="flex w-full justify-between mt-[5rem]">
 
-          <div>
-              <Image src="/icon2.png" alt="icone1" width={150} height={100}/>
+          <div className="">
+            <Image className="hidden lg:inline lg:ml-[60%] lg:mb-[3rem]" src="/icon1.png" alt="icone1" width={160} height={100}/>
+
+            <div className="ml-[29%] relative">
+              <div className="bg-blue-800 border-1 w-[31rem] h-[38rem] rounded-b-lg shadow-2xl 
+              shadow-black z-0"> </div>
+
+              <div className="bg-white z-10 absolute top-0 transform rounded-b-[4rem] w-[31rem] h-[10rem]"> </div>
+            </div>
           </div>
+          
+          <div className="">
+            <Image className="hidden lg:inline lg:ml-[25%] lg:mb-[3rem]" src="/icon2.png" alt="icone1" width={160} height={100}/>
+
+            <div className="mr-[8rem] relative">
+              <div className="bg-white border-1 w-[31rem] h-[38rem] rounded-b-lg shadow-2xl 
+              shadow-black z-0"> </div>
+
+              <div className="bg-blue-800 z-10 absolute top-0 transform rounded-b-[4rem] w-[31rem] h-[10rem]"> </div>
+            </div>
+          </div>   
         </div>
       </section>
 
