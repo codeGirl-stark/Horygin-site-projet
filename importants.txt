@@ -15,3 +15,4 @@ Le module a toujours une priorité sur la classe css
 Pour importer une fonction export default function <nom> , on met juste import <nom> from "source"
 Mais pour une fonction qui n'est pas exporter par défaut on met import {<nom>} from "source"
 Dans un composant il peut avoir plusieurs fonctions
+Lorsque dans un composant on a deux fonctions, une exportée par défaut et l'autre non, on les importe comme suit: import <nom_fonction_export_par_defaut>,{<nom_fonction_export_normal>}
