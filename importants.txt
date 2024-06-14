@@ -1,0 +1,9 @@
+Lorsqu'on cré un dossier dans le dossier app et que ce dossier contient un fichier dont on connait pas le chemin on nomme le fichier [slug].js et on écrit la fonction ce qui veut dire que quelsue soit l'url que tape l'utisateur il se retrouvera sur la page.
+
+Ecrire du CSS dans le global.css du dossier styles exemple (.accueil)
+Pour appeler l'élément css il faut ecrire className="accueil"
+
+On peut aussi utiliser des modules de styles pour chaque page dans le cas où on veut personnaliser les choses 
+Là on cré dans style le fichier module (ex : Home.module.css pour la page Home)
+ensuite on importe le module dans le fichier HTML (import styles from ../styles/Home.module.css)
+et dans le code on met className={styles.accueil}// accueil est un element de style du module et styles est la constante créée pour récupérer les éléments du module
