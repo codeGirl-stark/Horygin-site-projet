@@ -7,3 +7,6 @@ On peut aussi utiliser des modules de styles pour chaque page dans le cas où on
 Là on cré dans style le fichier module (ex : Home.module.css pour la page Home)
 ensuite on importe le module dans le fichier HTML (import styles from ../styles/Home.module.css)
 et dans le code on met className={styles.accueil}// accueil est un element de style du module et styles est la constante créée pour récupérer les éléments du module
+
+Si on veut ajouter une classe CSS au module, on fait className={`${styles.accueil} test`}//test est la classe CSS
+Le module a toujours une priorité sur la classe css
