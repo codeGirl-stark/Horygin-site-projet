@@ -33,3 +33,30 @@ const ModifPrenom ()=>{
 }
 <h1>Bonjour {prenom}</h1>
 Le prénom est modifié automatiquement 
+
+
+****hook et tableau
+const [tab, setTab] = useState([1,2,3])
+
+const ajoutTab = ()=>{
+  setTab(prev =>{
+    return [...prev, 4]
+  })
+Les ... permettent de récupérer les élements précedents du tableau
+
+
+***De même pour du JSON
+const [personne, setPersonne] = useState(
+  {
+    nom : "Tony",
+    age : 17
+  }
+)
+
+const ajoutJson = ()=>{
+  setPersonne(prev =>{
+      return {
+        ...prev,
+        genre : "homme"
+      }
+  })
