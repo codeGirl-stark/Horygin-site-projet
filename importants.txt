@@ -22,3 +22,14 @@ Lorsque dans un composant on a deux fonctions, une exportée par défaut et l'au
 Utiliser google fonts et google icons pour les fonts et les icones
 Aller sur google fonts de google et choisir le font souhaité ensuite copier le chemin
 aller sur google icone materiel icone guide et copier le lien
+
+
+Utiliser le hook state pour réaliser le changement de comportement des variables dans le code
+exemple :
+const [prenom, setPrenom] = useState("Jean")
+//Fonction pour modifier un prénom:
+const ModifPrenom ()=>{
+  setPrenom = ("Toto")
+}
+<h1>Bonjour {prenom}</h1>
+Le prénom est modifié automatiquement 
