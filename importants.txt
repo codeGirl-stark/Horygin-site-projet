@@ -1,3 +1,5 @@
+AKDEV et CODAPS pages youtubes pour apprendre
+
 Lorsqu'on cré un dossier dans le dossier app et que ce dossier contient un fichier dont on connait pas le chemin on nomme le fichier [slug].js et on écrit la fonction ce qui veut dire que quelsue soit l'url que tape l'utisateur il se retrouvera sur la page.
 
 Ecrire du CSS dans le global.css du dossier styles exemple (.accueil)
@@ -16,3 +18,7 @@ Pour importer une fonction export default function <nom> , on met juste import <
 Mais pour une fonction qui n'est pas exporter par défaut on met import {<nom>} from "source"
 Dans un composant il peut avoir plusieurs fonctions
 Lorsque dans un composant on a deux fonctions, une exportée par défaut et l'autre non, on les importe comme suit: import <nom_fonction_export_par_defaut>,{<nom_fonction_export_normal>}
+
+Utiliser google fonts et google icons pour les fonts et les icones
+Aller sur google fonts de google et choisir le font souhaité ensuite copier le chemin
+aller sur google icone materiel icone guide et copier le lien
