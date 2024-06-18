@@ -60,3 +60,5 @@ const ajoutJson = ()=>{
         genre : "homme"
       }
   })
+
+condition ternaire : if a : b else c => a?b:c;
